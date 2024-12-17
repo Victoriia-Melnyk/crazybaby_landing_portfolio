@@ -1,0 +1,61 @@
+.footer {
+  position: relative;
+
+  &__socials {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+
+    @include on-tablet-and-above {
+      margin-bottom: 60px;
+      column-gap: 60px;
+    }
+  }
+
+  &__rights {
+    padding-bottom: 20px;
+    text-align: center;
+    color: $c-lightgrey-one;
+
+    @include secondary-text;
+
+    @include on-tablet-and-above {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include on-tablet-and-above {
+      display: block;
+      margin: 0 auto 60px;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(images/arrow.png);
+    background-position: contain;
+    background-repeat: no-repeat;
+
+    @include on-tablet {
+      display: block;
+      position: absolute;
+      right: 50px;
+      top: 0;
+    }
+
+    @include on-desktop {
+      display: block;
+      position: absolute;
+      right: 123px;
+      top: 0;
+    }
+  }
+}

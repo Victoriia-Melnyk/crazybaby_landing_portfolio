@@ -1,3 +1,69 @@
-body {
-  margin: 0;
+@import "normilize";
+@import "utils";
+@import "typography";
+@import "blocks/logo";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/benefits";
+@import "blocks/description";
+@import "blocks/icon";
+@import "blocks/presentation";
+@import "blocks/about-us";
+@import "blocks/technology";
+@import "blocks/testimonials";
+@import "blocks/features";
+@import "blocks/questions";
+@import "blocks/social";
+@import "blocks/footer";
+@import "blocks/header-icon";
+@import "blocks/menu";
+@import "blocks/page-nav";
+@import "blocks/control";
+
+.page {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  background-color: $c-lightgrey-three;
+  scroll-behavior: smooth;
+
+  &__body {
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+
+  &__section {
+    margin-bottom: 110px;
+
+    @include on-tablet {
+      margin-bottom: 140px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 170px;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include on-desktop {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 90px;
+    }
+  }
 }

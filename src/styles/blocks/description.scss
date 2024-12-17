@@ -1,0 +1,36 @@
+.description {
+  @include on-tablet {
+    width: 340px;
+  }
+
+  @include on-desktop {
+    width: 276px;
+  }
+
+  &__icon {
+    margin: 0 auto 40px;
+
+    @include on-tablet {
+      margin: 0 auto 50px;
+    }
+
+    @include on-desktop {
+      margin: 0 auto 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $c-darkgrey-one;
+    text-align: center;
+
+    @include heading-h4;
+  }
+
+  &__paragraph {
+    text-align: center;
+    color: $c-darkgrey-three;
+
+    @include secondary-text;
+  }
+}

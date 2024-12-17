@@ -1,0 +1,29 @@
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @include on-tablet {
+    gap: 40px;
+  }
+
+  @include on-desktop {
+    flex-direction: row;
+    gap: 84px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    @include thirdary-text;
+
+    text-decoration: none;
+    color: $c-darkgrey-one;
+
+    &:hover {
+      @include heading-h6;
+    }
+  }
+}

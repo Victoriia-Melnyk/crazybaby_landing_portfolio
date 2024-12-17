@@ -1,0 +1,30 @@
+.control {
+  height: 14px;
+  width: 48px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--next-black {
+    background-image: url(images/controls/slider-next-black.svg);
+  }
+
+  &--next-grey {
+    background-image: url(images/controls/slider-next-grey.svg);
+  }
+  &--prev-black {
+    background-image: url(images/controls/slider-prev-black.svg);
+  }
+
+  &--prev-grey {
+    background-image: url(images/controls/slider-prev-grey.svg);
+  }
+
+  &--back:hover {
+    background-image: url(images/controls/slider-prev-hover.svg);
+  }
+
+  &--next:hover {
+    background-image: url(images/controls/slider-next-hover.svg);
+  }
+}

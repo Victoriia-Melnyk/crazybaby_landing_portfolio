@@ -1,0 +1,65 @@
+@import "../typography";
+@import "../utils/vars";
+
+.header {
+  background-color: $c-lightgrey-three;
+  padding-block: 25px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__nav {
+    display: none;
+
+    @include on-tablet-and-above {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+  }
+
+  &__specs {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $c-darkgrey-two;
+  }
+
+  &__lang {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #828282;
+
+    &:focus {
+      color: $c-darkgrey-one;
+    }
+  }
+
+  &__button {
+    @include button-text;
+
+    width: 100px;
+    height: 48px;
+    background-color: $c-darkgrey-one;
+    border: none;
+    color: #fff;
+
+    &:hover {
+      background-color: $c-black;
+    }
+
+    &:disabled {
+      background-color: $c-lightgrey-two;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.features {
+  &__title {
+    margin-bottom: 30px;
+    color: $c-darkgrey-one;
+
+    @include heading-h2;
+  }
+
+  &__content {
+    padding: 30px 30px 0;
+    background-color: #d6ecec;
+    margin-inline: -30px;
+    width: calc(100% + 60px);
+
+    @include on-tablet {
+      padding: 60px 0 0 90px;
+      margin-inline: 0;
+      width: 100%;
+      height: 555px;
+
+      background-image: url(images/tablet/5.png);
+      background-size: 415px 225px;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+    }
+
+    @include on-desktop {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+
+      @include on-desktop {
+        margin-inline: 0;
+        width: 100%;
+        height: 642px;
+        padding: 60px 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 55px 130px;
+
+        background-color: #d6ecec;
+        background-image: url(images/tablet/5.png);
+        background-size: 543px 300px;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    color: #0c797a;
+
+    @include heading-h3;
+
+    @include on-desktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    color: $c-darkgrey-one;
+
+    @include secondary-text;
+
+    @include on-desktop {
+      @include main-text;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+
+    @include on-tablet {
+      width: 260px;
+    }
+
+    @include on-desktop {
+      width: 378px;
+      margin-bottom: 59px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    @include on-tablet {
+      justify-content: flex-start;
+    }
+  }
+
+  &__pages {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 3px;
+
+    @include on-tablet {
+      justify-content: flex-start;
+      margin-left: 24px;
+    }
+  }
+
+  &__first-page {
+    color: $c-darkgrey-one;
+
+    @include main-text;
+  }
+
+  &__next-page {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: $c-lightgrey-one;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    @include on-tablet-and-above {
+      display: none;
+    }
+  }
+}

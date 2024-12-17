@@ -1,0 +1,59 @@
+.presentation {
+  &__content {
+    margin-bottom: 140px;
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 65px 20px;
+    justify-content: center;
+
+    @include on-desktop {
+      margin-bottom: 170px;
+      column-gap: 30px;
+    }
+  }
+
+  &__image {
+    height: 195px;
+    width: 100%;
+
+    background-image: url(images/mobile/2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include on-tablet {
+      height: 430px;
+      background-image: url(images/tablet/2.png);
+    }
+
+    @include on-desktop {
+      margin: 0 auto;
+      width: 846px;
+      height: 520px;
+      background-image: url(images/desktop/2.png);
+    }
+  }
+
+  &__description {
+    margin-bottom: 110px;
+  }
+
+  &--mobile {
+    @include on-tablet-and-above {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @include on-tablet {
+      display: block;
+    }
+
+    @include on-desktop {
+      display: block;
+    }
+  }
+}

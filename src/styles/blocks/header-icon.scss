@@ -1,0 +1,24 @@
+.header-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 8px 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--close {
+    padding: 4px;
+    background-image: url(images/icons/close.png);
+  }
+
+  &--menu {
+    width: 32px;
+    height: 32px;
+    background-image: url(images/icons/burger-menu.png);
+
+    @include on-desktop {
+      display: none;
+    }
+  }
+}

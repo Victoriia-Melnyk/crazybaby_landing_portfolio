@@ -1,0 +1,117 @@
+@import "./utils/mixins";
+
+@mixin heading-h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;
+  text-transform: uppercase;
+
+  @include on-tablet {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  @include on-desktop {
+    font-size: 64px;
+    line-height: 78px;
+  }
+}
+
+@mixin heading-h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  @include on-tablet {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  @include on-desktop {
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+
+@mixin heading-h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  @include on-tablet {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @include on-desktop {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+
+@mixin heading-h4 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+@mixin heading-h5 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+@mixin heading-h6 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin quote-text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+
+  @include on-tablet {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+  @include on-desktop {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+}
+
+@mixin button-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+@mixin main-text {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+@mixin secondary-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+@mixin thirdary-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+}
